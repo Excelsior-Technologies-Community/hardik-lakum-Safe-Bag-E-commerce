@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Jost-Regular';
+    src: url(assets/fonts/Jost/static/Jost-Regular.ttf);
+}
+@font-face {
+    font-family: 'Jost-SemiBold';
+    src: url(assets/fonts/Jost/static/Jost-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Jost-Medium';
+    src: url(assets/fonts/Jost/static/Jost-Medium.ttf);
+}
+@font-face {
+    font-family: 'Jost-Bold';
+    src: url(assets/fonts/Jost/static/Jost-Bold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.blog-upper-head{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+.blog-upper-head h6{
+    font-family: 'Jost-Regular';
+    font-size: 20px;
+    color: #1D1D1D;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.blog-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.blog-card{
+    border: 1px solid #1D1D1D;
+    border-radius: 5px;
+    padding: 25px;
+}
+.blog-date{
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+.blog-date p{
+    color: #1D1D1D;
+    opacity: 0.70;
+    font-size: 17px !important;
+    font-family: 'Jost-Regular';
+    padding-right: 10px;
+    margin-bottom: 0px !important;
+}
+.blog-date p:nth-child(2){
+    border-left: 1px solid #1D1D1D;
+    padding-left: 10px;
+}
+.blog-card h6{
+    color: #1D1D1D;
+    font-size: 26px;
+    font-family: 'Jost-Medium';
+    margin-top: 10px;
+    margin-bottom: 20px ;
+}
+.blog-card p{
+    color: #1D1D1D;
+    opacity: 0.70;
+    font-family: 'Jost-Regular';
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.blog-card a{
+    color: #347758;
+    font-size: 20px;
+    font-family: 'Jost-Medium';
+    text-decoration: none;
+}
+.blog-card a:hover{
+    color: #347758;    
+}
+
+@media screen and (max-width: 1024px) {
+    .blog-upper-head {            
+        gap: 13px;
+        margin-bottom: 18px;
+        margin-top: 20px;
+    }
+    .blog-upper-head h6 {        
+        font-size: 17px;        
+    }
+    .blog-card {        
+        padding: 20px;
+    }
+    .blog-wrapper {        
+        gap: 30px;
+    }
+    .blog-date {        
+        margin-top: 15px;
+    }
+    .blog-date p {        
+        font-size: 15px !important;        
+        padding-right: 10px;        
+    }
+    .blog-card h6 {        
+        font-size: 22px;        
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+    .blog-card p {                
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .blog-card a {        
+        font-size: 18px;        
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .blog-upper-head {
+        gap: 10px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    .blog-upper-head h6 {
+        font-size: 15px;
+    }
+    .blog-wrapper {        
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .blog-card {
+        padding: 17px;
+    }
+    .blog-date {
+        margin-top: 12px;
+    }
+    .blog-date p {
+        font-size: 14px !important;
+        padding-right: 8px;
+    }
+    .blog-card h6 {
+        font-size: 20px;
+        margin-top: 6px;
+        margin-bottom: 8px;
+    }
+    .blog-card p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .blog-card a {
+        font-size: 16px;
+    }
+    .blog-card a i{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .blog-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .blog-card {
+        padding: 10px;
+    }
+    .blog-upper-head {
+        gap: 8px;
+        margin-bottom: 10px;
+        margin-top: 6px;
+    }
+    .blog-date p {
+        font-size: 12px !important;
+        padding-right: 8px;
+    }
+    .blog-card h6 {
+        font-size: 18px;
+        margin-top: 4px;
+        margin-bottom: 5px;
+    }
+    .blog-card p {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    .blog-card a {
+        font-size: 14px;
+    }
+    .blog-card a i {
+        font-size: 12px;
+    }
+}

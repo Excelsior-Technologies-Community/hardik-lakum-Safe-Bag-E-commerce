@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="content-card.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../assets/img/white-logo.svg" class="animate__backInLeft animate__animated" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item dropdown me-lg-3 me-xl-3 me-md-2">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    My Account
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white d-flex align-items-center" href="#">Wish List <span
+                                        class="badge wish-badge text-bg-warning text-white rounded-circle ms-2">4</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <button type="button" class="bg-transparent border-0">
+                            <img src="../assets/img/cart.svg" alt="">
+                            <span class="position-absolute top-2 start-80 translate-middle badge rounded-pill bg-dark">
+                                0
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="shop-categories">
+        <div class="container">
+            <div class="main-categories">
+                <div class="left-categories">
+                    <div class="shopping-categories">
+                        <img src="../assets/img/noun-menu.svg" alt="">
+                        <h6>Shop By Categories</h6>
+                    </div>
+                    <div class="search-categories">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle dropdown-location" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                All Categories
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                                <li><a class="dropdown-item" href="#">Dairy</a></li>
+                            </ul>
+                        </div>
+                        <div class="input-group catagories-input-group">
+                            <input type="text" class="form-control" placeholder="Search Products..."
+                                aria-label="Username" aria-describedby="basic-addon1">
+                            <span class="input-group-text" id="basic-addon1"><img src="../assets/img/noun-search.svg"
+                                    alt=""></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-categories">
+                    <div class="location">
+                        <img src="../assets/img/location.svg" alt="">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle dropdown-location" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ahmedabad
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Vadodara</a></li>
+                                <li><a class="dropdown-item" href="#">Surat</a></li>
+                                <li><a class="dropdown-item" href="#">Gandhinagar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <img src="../assets/img/headphone.svg" alt="">
+                        <p>(215) 171-4729</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-card">
+        <div class="container">
+            <div class="categories-upper-head">
+                <h6>Home</h6>
+                <i class="fa-solid fa-caret-right"></i>
+                <h6>Fruit & Vegetables</h6>
+                <i class="fa-solid fa-caret-right"></i>
+                <h6>Bolognese Tofu Sauce</h6>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content-card-wrapper">
+                        <img src="../assets/img/page-3/content-card-1.png" alt="" class="img-fluid">
+                        <div class="d-flex gap-xl-4 gap-lg-3 gap-md-2 gap-2 mt-2 mt-xl-5 mt-lg-4 mt-md-3">
+                            <div class="content-card-img">
+                                <img src="../assets/img/page-3/content-card-2.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="content-card-img">
+                                <img src="../assets/img/page-3/content-card-3.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="content-card-img">
+                                <img src="../assets/img/page-3/content-card-4.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="content-card-img">
+                                <img src="../assets/img/page-3/content-card-5.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content-card-content">
+                        <h5 class="animate__jackInTheBox animate__animated">Bolognese Tofu Sauce</h5>
+                        <div class="content-card-info">
+                            <p>By Biona Organic</p>
+                            <p>Product Id: 12509as894awe</p>
+                        </div>
+                        <h6>₹ 850.00</h6>
+                        <div class="d-flex gap-3 gap-md-2">
+                            <div class="content-card-weight"><p>200g</p></div>
+                            <div class="content-card-weight"><p>340g</p></div>
+                            <div class="content-card-weight"><p>400g</p></div>
+                            <div class="content-card-weight"><p>500g</p></div>                            
+                        </div>
+                        <div class="d-flex gap-3 mt-3 mt-xl-4 mt-lg-4 gap-md-2 mt-md-3">
+                            <div class="content-card-quantity">
+                                <i class="fa-solid fa-minus"></i>
+                                <p>1</p>
+                                <i><i class="fa-solid fa-plus"></i></i>
+                            </div>
+                            <button class="btn btn-warning">Add To Cart</button>
+                        </div>
+                        <hr class="content-card-hr">
+                        <div class="contact-card-description">
+                            <h4>Product Discerption</h4>
+                            <p>Veniam qui eos molestiae. Dolore quis aliquid eos enim. Molestiae commodi sit numquam mollitia. Adipisci voluptas ut repudiandae qui molestiae porro. </p>
+                            <p>Inventore quia repellat numquam quae repudiandae. Ipsum quo voluptates quia molestias omnis dignissimos et. Neque hic eius quaerat. Officiis sed omnis molestiae in qui excepturi. Ad voluptas omnis tempore non. Rerum sunt aut earum debitis iste est debitis labore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-sellers">
+        <div class="container">
+          <div class="best-sellers-heading">
+            <h2 data-aos="fade-right">You May Also Like</h2>
+            <!-- <a href="#">View All <span><i class="fa-solid fa-arrow-right"></i></span></a> -->
+          </div>
+          <div class="best-sellers-content">
+            <div class="sellers-card">
+              <div class="d-flex justify-content-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23.145" height="22.314" class="like" viewBox="0 0 23.145 22.314">
+              <g id="Group_17473" data-name="Group 17473" transform="translate(-1410.906 -73.307)">
+                <path id="favorite" d="M15.682,10.346A6.164,6.164,0,0,0,10.922,12.6,6.16,6.16,0,0,0,0,16.509c0,2.661,1.587,5.739,4.716,9.148a45.419,45.419,0,0,0,5.774,5.215l.433.325.433-.325a45.42,45.42,0,0,0,5.774-5.215c3.13-3.409,4.716-6.487,4.716-9.148A6.17,6.17,0,0,0,15.682,10.346Z" transform="translate(1411.556 63.611)" fill="none" stroke="#1d1d1d" stroke-width="1.3"/>
+              </g>
+            </svg>
+              </div>
+              <div class="sellers-img">
+                <img src="../assets/img/best-seller-5.png" alt="" class="img-fluid" data-aos="fade-down">
+              </div>
+              <div data-aos="fade-up">
+                <h6>Milkmaild</h6>
+                <p>500g</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 data-aos="fade-right">₹ 600.00</h5>
+                <div class="sellers-cart" data-aos="fade-left">
+                  <img src="../assets/img/cart.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="sellers-card">
+              <div class="d-flex justify-content-end align-items-center">
+                <!-- <div class="sellers-sale">Sale</div> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="23.145" height="22.314" class="like" viewBox="0 0 23.145 22.314">
+              <g id="Group_17473" data-name="Group 17473" transform="translate(-1410.906 -73.307)">
+                <path id="favorite" d="M15.682,10.346A6.164,6.164,0,0,0,10.922,12.6,6.16,6.16,0,0,0,0,16.509c0,2.661,1.587,5.739,4.716,9.148a45.419,45.419,0,0,0,5.774,5.215l.433.325.433-.325a45.42,45.42,0,0,0,5.774-5.215c3.13-3.409,4.716-6.487,4.716-9.148A6.17,6.17,0,0,0,15.682,10.346Z" transform="translate(1411.556 63.611)" fill="none" stroke="#1d1d1d" stroke-width="1.3"/>
+              </g>
+            </svg>
+              </div>
+              <div class="sellers-img">
+                <img src="../assets/img/breackfast-dairy-2.png" alt="" class="img-fluid" data-aos="fade-down">
+              </div>
+              <div data-aos="fade-up">
+                <h6>Multi Grain Bread</h6>
+                <p>200g</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 data-aos="fade-right">₹ 100.00</h5>
+                <div class="sellers-cart" data-aos="fade-left">
+                  <img src="../assets/img/cart.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="sellers-card">
+              <div class="d-flex justify-content-end align-items-center">
+                <!-- <div class="sellers-sale">Sale</div> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="23.145" height="22.314" class="like" viewBox="0 0 23.145 22.314">
+              <g id="Group_17473" data-name="Group 17473" transform="translate(-1410.906 -73.307)">
+                <path id="favorite" d="M15.682,10.346A6.164,6.164,0,0,0,10.922,12.6,6.16,6.16,0,0,0,0,16.509c0,2.661,1.587,5.739,4.716,9.148a45.419,45.419,0,0,0,5.774,5.215l.433.325.433-.325a45.42,45.42,0,0,0,5.774-5.215c3.13-3.409,4.716-6.487,4.716-9.148A6.17,6.17,0,0,0,15.682,10.346Z" transform="translate(1411.556 63.611)" fill="none" stroke="#1d1d1d" stroke-width="1.3"/>
+              </g>
+            </svg>
+              </div>
+              <div class="sellers-img">
+                <img src="../assets/img/snacks-1.png" alt="" class="img-fluid" data-aos="fade-down">
+              </div>
+              <div data-aos="fade-up">
+                <h6>Epigamia</h6>
+                <p>100g</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 data-aos="fade-right">₹ 150.00</h5>
+                <div class="sellers-cart" data-aos="fade-left">
+                  <img src="../assets/img/cart.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="sellers-card">
+              <div class="d-flex justify-content-end">
+                <!-- <div class="sellers-new">New</div> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="23.145" height="22.314" class="like" viewBox="0 0 23.145 22.314">
+              <g id="Group_17473" data-name="Group 17473" transform="translate(-1410.906 -73.307)">
+                <path id="favorite" d="M15.682,10.346A6.164,6.164,0,0,0,10.922,12.6,6.16,6.16,0,0,0,0,16.509c0,2.661,1.587,5.739,4.716,9.148a45.419,45.419,0,0,0,5.774,5.215l.433.325.433-.325a45.42,45.42,0,0,0,5.774-5.215c3.13-3.409,4.716-6.487,4.716-9.148A6.17,6.17,0,0,0,15.682,10.346Z" transform="translate(1411.556 63.611)" fill="none" stroke="#1d1d1d" stroke-width="1.3"/>
+              </g>
+            </svg>
+              </div>
+              <div class="sellers-img">
+                <img src="../assets/img/breackfast-dairy-3.png" alt="" class="img-fluid" data-aos="fade-down">
+              </div>
+              <div data-aos="fade-up">
+                <h6>Eggs</h6>
+                <p>100g</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 data-aos="fade-right">₹ 350.00</h5>
+                <div class="sellers-cart" data-aos="fade-left">
+                  <img src="../assets/img/cart.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="sellers-card">
+              <div class="d-flex justify-content-end">
+                <!-- <div>Sale</div> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="23.145" height="22.314" class="like" viewBox="0 0 23.145 22.314">
+              <g id="Group_17473" data-name="Group 17473" transform="translate(-1410.906 -73.307)">
+                <path id="favorite" d="M15.682,10.346A6.164,6.164,0,0,0,10.922,12.6,6.16,6.16,0,0,0,0,16.509c0,2.661,1.587,5.739,4.716,9.148a45.419,45.419,0,0,0,5.774,5.215l.433.325.433-.325a45.42,45.42,0,0,0,5.774-5.215c3.13-3.409,4.716-6.487,4.716-9.148A6.17,6.17,0,0,0,15.682,10.346Z" transform="translate(1411.556 63.611)" fill="none" stroke="#1d1d1d" stroke-width="1.3"/>
+              </g>
+            </svg>
+              </div>
+              <div class="sellers-img">
+                <img src="../assets/img/snacks-5.png" alt="" class="img-fluid" data-aos="fade-down">
+              </div>
+              <div data-aos="fade-up">
+                <h6>Yummy Chips</h6>
+                <p>1L</p>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 data-aos="fade-right">₹ 45.00</h5>
+                <div class="sellers-cart" data-aos="fade-left">
+                  <img src="../assets/img/cart.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-left">
+              <img src="../assets/img/footer-logo.svg" alt="" class="img-fluid" data-aos="fade-right">
+              <p data-aos="zoom-in">Maxime Molestiae Quidem Eligendi Consequatur Itaque. Repellendus Corrupti Deserunt Est In Et Molestiae Sit
+                Velit Dolore. Ut Sunt Voluptatum. Doloremque Corporis Voluptatibus Aut Non. Voluptatibus Quia Esse Illo
+                Explicabo Dignissimos Perspiciatis Voluptas At.</p>
+              <div class="footer-icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+            <div class="footer-list">
+              <ul data-aos="fade-down">
+                <li><h6>Products Categories</h6></li>
+                <li><a href="#">Fruit & Vegetables</a></li>
+                <li><a href="#">Breakfast & Dairy</a></li>
+                <li><a href="#">Biscuits,Snacks & Chocolates </a></li>
+                <li><a href="#">Pet Foods</a></li>
+                <li><a href="#">Chicken, Meat & Fish</a></li>
+              </ul>
+            </div>
+            <div class="footer-list">
+              <ul data-aos="fade-up">
+                <li><h6>Useful Links</h6></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">My Cart </a></li>
+                <li><a href="blog.html">Blogs</a></li>
+              </ul>
+            </div>
+            <div class="footer-list">
+              <ul data-aos="fade-left">
+                <li>
+                  <h6>Customer service</h6>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <p class="copy-right">COPYRIGHT © ALL RIGHTS RESERVED BY SAFEBAG</p>
+        </div>
+    </section>
+</body>
+</html>
+<script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>

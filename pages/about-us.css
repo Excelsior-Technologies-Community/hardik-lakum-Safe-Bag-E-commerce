@@ -1,0 +1,462 @@
+@font-face {
+    font-family: 'Jost-Regular';
+    src: url(assets/fonts/Jost/static/Jost-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Jost-SemiBold';
+    src: url(assets/fonts/Jost/static/Jost-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Jost-Medium';
+    src: url(assets/fonts/Jost/static/Jost-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Jost-Bold';
+    src: url(assets/fonts/Jost/static/Jost-Bold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.about-us {
+    margin-top: 30px;
+    background-image: url(../assets/img/about-us/about-us-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 93px 0px;
+    text-align: center;
+}
+
+.about-us h6 {
+    color: #FAB528;
+    font-size: 20px;
+    font-family: 'Jost-Regular';
+    margin-bottom: 10px;
+}
+
+.about-us h2 {
+    color: #1D1D1D;
+    font-size: 50px;
+    font-family: 'Jost-SemiBold';
+    margin-bottom: 20px;
+    /* width: 53%; */
+}
+
+.about-upper-head {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 31px 0px;
+}
+
+.about-navigation {
+    background-color: #FAFAFA;
+}
+
+.about-upper-head h6 {
+    font-family: 'Jost-Regular';
+    font-size: 20px;
+    color: #1D1D1D;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.save-more-with-go {
+    margin-top: 110px;
+}
+
+.save-more-go-content h2 {
+    color: #1D1D1D;
+    font-size: 32px;
+    font-family: 'Jost-Medium';
+    margin-bottom: 15px;
+}
+
+.save-more-go-content p {
+    color: #1D1D1D;
+    opacity: 0.70;
+    font-size: 20px;
+    font-family: 'Jost-Regular';
+}
+
+.what-we-provide {
+    margin-top: 110px;
+    text-align: center;
+}
+
+.what-we-provide h3 {
+    color: #1D1D1D;
+    font-size: 40px;
+    font-family: 'Jost-Medium';
+    margin-bottom: 60px;
+}
+
+.provide-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.provide-wrapper h6 {
+    color: #1D1D1D;
+    font-size: 25px;
+    font-family: 'Jost-Medium';
+    margin-bottom: 15px;
+    margin-top: 35px;
+}
+
+.provide-wrapper p {
+    color: #1D1D1D;
+    opacity: 0.70;
+    font-size: 20px;
+    font-family: 'Jost-Regular';
+}
+
+.our-blog {
+    margin-top: 110px;
+}
+
+.our-blog h3 {
+    color: #1D1D1D;
+    font-size: 40px;
+    font-family: 'Jost-Medium';
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.our-blog-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.our-blog-card {
+    border: 1px solid #1D1D1D;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.our-blog-card .blog-date {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.our-blog-card .blog-date p {
+    color: #1D1D1D;
+    opacity: 0.70;
+    font-size: 17px !important;
+    font-family: 'Jost-Regular';
+    padding-right: 10px;
+    margin-bottom: 0px !important;
+}
+
+.our-blog-card .blog-date p:nth-child(2) {
+    border-left: 1px solid #1D1D1D;
+    padding-left: 10px;
+}
+
+.our-blog-card h6 {
+    color: #1D1D1D;
+    font-size: 26px;
+    font-family: 'Jost-Medium';
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.our-blog-card p {
+    color: #1D1D1D;
+    opacity: 0.70;
+    font-family: 'Jost-Regular';
+    font-size: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.our-blog-card a {
+    color: #347758;
+    font-size: 20px;
+    font-family: 'Jost-Medium';
+    text-decoration: none;
+}
+
+.our-blog-card a:hover {
+    color: #347758;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-us h6 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .about-us h2 {
+        font-size: 38px;
+        margin-bottom: 16px;
+    }
+
+    .about-us {
+        padding: 58px 0px;
+    }
+
+    .about-upper-head {
+        gap: 12px;
+        padding: 22px 0px;
+    }
+
+    .about-upper-head h6 {
+        font-size: 18px;
+    }
+
+    .save-more-with-go {
+        margin-top: 60px;
+    }
+
+    .save-more-go-content h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .save-more-go-content p {
+        font-size: 18px;
+    }
+
+    .what-we-provide {
+        margin-top: 60px;
+    }
+
+    .what-we-provide h3 {
+        font-size: 36px;
+        margin-bottom: 48px;
+    }
+
+    .provide-wrapper h6 {
+        font-size: 21px;
+        margin-bottom: 10px;
+        margin-top: 28px;
+    }
+
+    .provide-wrapper p {
+        font-size: 18px;
+    }
+
+    .our-blog {
+        margin-top: 60px;
+    }
+
+    .our-blog h3 {
+        font-size: 36px;
+        margin-bottom: 38px;
+    }
+
+    .our-blog-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .our-blog-card {
+        padding: 20px;
+    }
+
+    .our-blog-card .blog-date p {
+        font-size: 15px !important;
+    }
+
+    .our-blog-card .blog-date {
+        margin-top: 15px;
+    }
+
+    .our-blog-card h6 {
+        font-size: 20px;
+        margin-top: 6px;
+        margin-bottom: 12px;
+    }
+
+    .our-blog-card p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .our-blog-card a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-us {
+        padding: 40px 0px;
+    }
+
+    .about-us h6 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .about-us h2 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .about-upper-head {
+        gap: 10px;
+        padding: 16px 0px;
+    }
+
+    .about-upper-head h6 {
+        font-size: 16px;
+    }
+
+    .save-more-with-go {
+        margin-top: 40px;
+    }
+
+    .save-more-go-content h2 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .save-more-go-content p {
+        font-size: 15px;
+    }
+
+    .what-we-provide {
+        margin-top: 40px;
+    }
+
+    .what-we-provide h3 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .provide-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .provide-wrapper h6 {
+        font-size: 18px;
+        margin-bottom: 4px;
+        margin-top: 18px;
+    }
+
+    .provide-wrapper p {
+        font-size: 15px;
+    }
+
+    .our-blog {
+        margin-top: 40px;
+    }
+
+    .our-blog h3 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .our-blog-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .our-blog-card {
+        padding: 12px;
+    }
+
+    .our-blog-card .blog-date p {
+        font-size: 12px !important;
+    }
+
+    .our-blog-card h6 {
+        font-size: 17px;
+        margin-top: 4px;
+        margin-bottom: 6px;
+    }
+
+    .our-blog-card a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .about-us {
+        padding: 20px 0px;
+        margin-top: 18px;
+    }
+
+    .about-us h2 {
+        font-size: 21px;
+        margin-bottom: 9px;
+    }
+
+    .about-upper-head {
+        gap: 8px;
+        padding: 12px 0px;
+    }
+
+    .about-upper-head h6 {
+        font-size: 14px;
+    }
+
+    .provide-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .our-blog-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .save-more-go-content h2 {
+        font-size: 26px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .save-more-go-content p {
+        font-size: 14px;
+    }
+
+    .what-we-provide {
+        margin-top: 15px;
+    }
+
+    .what-we-provide h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .provide-wrapper h6 {
+        font-size: 17px;
+        margin-bottom: 2px;
+        margin-top: 11px;
+    }
+
+    .our-blog {
+        margin-top: 14px;
+    }
+
+    .our-blog h3 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .about-us h2 {
+        font-size: 18px;
+        margin-bottom: 9px;
+    }
+}

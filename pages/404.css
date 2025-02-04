@@ -1,0 +1,61 @@
+.error{
+    margin-top: 74px;
+    text-align: center;   
+}
+.error h2{
+    color: #19191B;
+    font-size: 40px;
+    font-family: 'Jost-Regular';
+}
+.error h1{
+    font-size: 278px;
+    font-family: 'Jost-Regular';
+    color: #000000;
+}
+
+@media screen and (max-width: 1024px) {
+    .error {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .error h2 {        
+        font-size: 35px;        
+    }
+    .error h1 {
+        font-size: 230px;        
+    }
+}
+@media screen and (max-width: 768px) {
+    .error {
+        margin-top: 22px;
+        text-align: center;
+    }
+    .error h2 {
+        font-size: 28px;
+    }
+    .error h1 {
+        font-size: 176px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .error {
+        margin-top: 12px;
+        text-align: center;
+    }
+    .error h2 {
+        font-size: 24px;
+    }
+    .error h1 {
+        font-size: 158px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .error h1 {
+        font-size: 118px;
+    }
+    .error h2 {
+        font-size: 22px;
+    }
+}

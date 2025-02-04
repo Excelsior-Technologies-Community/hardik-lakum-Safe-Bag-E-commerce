@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Details</title>
+    <link rel="stylesheet" href="blog-details.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../assets/img/white-logo.svg" alt="" class="animate__backInLeft animate__animated"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item dropdown me-lg-3 me-xl-3 me-md-2">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    My Account
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white d-flex align-items-center" href="#">Wish List <span
+                                        class="badge wish-badge text-bg-warning text-white rounded-circle ms-2">4</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <button type="button" class="bg-transparent border-0">
+                            <img src="../assets/img/cart.svg" alt="">
+                            <span class="position-absolute top-2 start-80 translate-middle badge rounded-pill bg-dark">
+                                0
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="shop-categories">
+        <div class="container">
+            <div class="main-categories">
+                <div class="left-categories">
+                    <div class="shopping-categories">
+                        <img src="../assets/img/noun-menu.svg" alt="">
+                        <h6>Shop By Categories</h6>
+                    </div>
+                    <div class="search-categories">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle dropdown-location" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                All Categories
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                                <li><a class="dropdown-item" href="#">Fruits</a></li>
+                                <li><a class="dropdown-item" href="#">Dairy</a></li>
+                            </ul>
+                        </div>
+                        <div class="input-group catagories-input-group">
+                            <input type="text" class="form-control" placeholder="Search Products..."
+                                aria-label="Username" aria-describedby="basic-addon1">
+                            <span class="input-group-text" id="basic-addon1"><img src="../assets/img/noun-search.svg"
+                                    alt=""></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-categories">
+                    <div class="location">
+                        <img src="../assets/img/location.svg" alt="">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle dropdown-location" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ahmedabad
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Vadodara</a></li>
+                                <li><a class="dropdown-item" href="#">Surat</a></li>
+                                <li><a class="dropdown-item" href="#">Gandhinagar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <img src="../assets/img/headphone.svg" alt="">
+                        <p>(215) 171-4729</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-details">
+        <div class="container">
+            <div class="blogdetails-upper-head">
+                <h6>Home</h6>
+                <i class="fa-solid fa-caret-right"></i>
+                <h6>Blogs</h6>
+                <i class="fa-solid fa-caret-right"></i>
+                <h6>Blog Details</h6>
+            </div>
+            <div class="row gx-xl-5 gx-lg-4">
+                <div class="col-xl-8 col-lg-8 col-md-7">
+                    <img src="../assets/img/blog-details/blog-details.png" alt="" class="img-fluid">
+                    <div class="blog-details-date">
+                        <p>20th Dec 2019</p>
+                        <p>350 Comments</p>
+                    </div>
+                    <div class="blog-details-description">
+                        <h5 data-aos="zoom-in">Nobis recusandae iste rerum aut vero esse harum.</h5>
+                        <p data-aos="zoom-in">Aliquid ut rem dignissimos dolorem vero. Laboriosam nihil voluptatem adipisci nesciunt.
+                            Repudiandae placeat laudantium totam quia perferendis aliquid rerum fugiat. Qui voluptatem
+                            aliquid. Id placeat id ratione quo earum ut. Velit minima minus repudiandae consequatur.</p>
+                        <p data-aos="zoom-in">Quia odit neque dignissimos adipisci sint sed. Quam odio dolorem. Laudantium inventore
+                            provident repellendus. Mollitia nulla nobis mollitia velit. Excepturi vel magni. Et
+                            voluptatem consequatur itaque veritatis sint.</p>
+                        <p data-aos="zoom-in">Quo quod veritatis nihil in quam ut et est. Sit ea voluptatum blanditiis. Delectus beatae
+                            commodi harum qui cumque quas. Eum debitis sed magni sapiente possimus aut voluptatem dolor.
+                            Sit voluptates qui ut.</p>
+                        <div class="blog-details-quote" data-aos="zoom-in">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <h6>Quisquam dolores quis maiores inventore sint quidem eligendi. Fugiat ad non provident
+                                assumenda tempore. Architecto nihil autem qui sed. Quos ea et quia dolorem accusamus
+                                deserunt. Quasi voluptatem doloremque.</h6>
+                        </div>
+                        <p data-aos="zoom-in">Omnis quia qui. Voluptatem iusto fugiat. Rerum quaerat quasi iure odio provident repudiandae
+                            suscipit perferendis. Modi itaque et consectetur cupiditate eligendi nihil rerum. Occaecati
+                            dolorum tenetur ipsum vitae aut. Placeat quod necessitatibus doloremque sunt omnis et
+                            dolores et inventore.</p>
+                        <p data-aos="zoom-in">Culpa necessitatibus porro eaque. In cumque at quis magnam velit rerum. Qui deserunt ipsum
+                            magnam totam. Quibusdam deleniti exercitationem eos minima. Corrupti explicabo assumenda
+                            consequatur repudiandae quas.</p>
+                        <p data-aos="zoom-in">Omnis saepe necessitatibus. Enim minus modi qui iure omnis voluptatem autem esse. Rerum ut
+                            ipsum. Vero eius nisi eum rem odio optio distinctio cum.Vel dolor quo qui impedit nulla
+                            placeat repellat voluptas velit. Magnam veritatis nulla necessitatibus ipsa sint. Unde
+                            voluptas quis ut. </p>
+                        <p data-aos="zoom-in">At minima voluptate quisquam reprehenderit itaque. Nulla nihil veritatis. Nemo ea et quas
+                            voluptate. Laboriosam ut sint.</p>
+                        <p>Cupiditate corrupti odit. Aut suscipit sint quia unde. Quam molestiae accusantium aliquid ea
+                            rerum velit enim.</p>
+                    </div>
+                    <div class="blog-details-pagination">
+                        <a href="#" data-aos="fade-right"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                        <a href="#" data-aos="fade-left">Next<i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="leave-reply">
+                        <h5>Leave Reply</h5>
+                        <form class="row gx-5">
+                            <div class="col-md-6">
+                                <input type="email" class="form-control mb-4 border-0 rounded-0" id="inputEmail4"
+                                    placeholder="Your Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="password" class="form-control mb-4 border-0 rounded-0" id="inputPassword4"
+                                    placeholder="Your Email">
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control border-0 rounded-0" id="exampleFormControlTextarea1"
+                                    rows="3" placeholder="Your Comments"></textarea>
+                            </div>
+                        </form>
+                        <button class="btn btn-warning">Submit</button>
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-5">
+                    <div class="blog-details-search">
+                        <h5>Search</h5>
+                        <div class="input-group blogdetails-list-group">
+                            <input type="text" class="form-control" placeholder="Search Products..."
+                                aria-label="Username" aria-describedby="basic-addon1">
+                            <span class="input-group-text" id="basic-addon1"><img src="../assets/img/noun-search.svg"
+                                    alt=""></span>
+                        </div>
+                    </div>
+                    <div class="blog-details-category">
+                        <h5>Blog Categories</h5>
+                        <hr>
+                        <ul>
+                            <li class="open">Breakfast & Cereal</li>
+                            <div class="opened" style="display: none;" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae vitae tenetur quasi. Ad earum sed quibusdam distinctio quam totam quia, cum officia! Aliquid, magnam quae! Iste error debitis quam!</div>
+                            <li>Dried Fruits</li>
+                            <li>Fast Food</li>
+                            <li>Fresh Meat</li>
+                            <li>Fruits Juice</li>
+                            <li>Milk & Cream</li>
+                            <li>Uncategorized</li>
+                            <li>Vegetables</li>
+                        </ul>
+                    </div>
+                    <div class="blog-details-recentblog">
+                        <h5>Recent Blogs</h5>
+                        <hr>
+                        <div class="d-flex gap-lg-3 gap-md-2 gap-2">
+                            <img src="../assets/img/blog-details/recent-blog-1.png" alt="" class="img-fluid" data-aos="fade-right">
+                            <div data-aos="fade-left">
+                                <h6>Healthy Cooking Is A Must For</h6>
+                                <p>17th Jan 2020</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-lg-3 gap-md-2 mt-lg-3 mt-md-2 gap-2 mt-2">
+                            <img src="../assets/img/blog-details/recent-blog-2.png" alt="" class="img-fluid" data-aos="fade-right">
+                            <div data-aos="fade-left">
+                                <h6>Repellendus debitis enim id neque aperiam blanditiis.</h6>
+                                <p>20th Dec 2019</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-lg-3 gap-md-2 mt-lg-3 mt-md-2 gap-2 mt-2">
+                            <img src="../assets/img/blog-details/recent-blog-3.png" alt="" class="img-fluid" data-aos="fade-right">
+                            <div data-aos="fade-left">
+                                <h6>Et temporibus dignissimos eos.</h6>
+                                <p>01st Jan 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-details-tags">
+                        <h5>Tags</h5>
+                        <hr>
+                        <div class="d-flex gap-lg-3 gap-md-2 gap-2 flex-wrap">
+                            <div class="tags" data-aos="fade-right"><p>Banana</p></div>
+                            <div class="tags" data-aos="fade-down"><p>Bread</p></div>
+                            <div class="tags" data-aos="fade-left"><p>Fruits</p></div>
+                            <div class="tags" data-aos="fade-right"><p>Orange</p></div>
+                            <div class="tags" data-aos="fade-left"><p>FoodPassion</p></div>
+                            <div class="tags" data-aos="fade-right"><p>Vegetables</p></div>
+                        </div>
+                    </div>
+                    <div class="blog-details-social-media">
+                        <h5>Social Media</h5>
+                        <hr>
+                        <div class="d-flex gap-lg-3 gap-md-2 gap-2">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-left">
+                    <img src="../assets/img/footer-logo.svg" alt="" class="img-fluid" data-aos="fade-right">
+                    <p data-aos="zoom-in">Maxime Molestiae Quidem Eligendi Consequatur Itaque. Repellendus Corrupti Deserunt Est In Et
+                        Molestiae Sit
+                        Velit Dolore. Ut Sunt Voluptatum. Doloremque Corporis Voluptatibus Aut Non. Voluptatibus Quia
+                        Esse Illo
+                        Explicabo Dignissimos Perspiciatis Voluptas At.</p>
+                    <div class="footer-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+                <div class="footer-list">
+                    <ul data-aos="fade-down">
+                        <li>
+                            <h6>Products Categories</h6>
+                        </li>
+                        <li><a href="#">Fruit & Vegetables</a></li>
+                        <li><a href="#">Breakfast & Dairy</a></li>
+                        <li><a href="#">Biscuits,Snacks & Chocolates </a></li>
+                        <li><a href="#">Pet Foods</a></li>
+                        <li><a href="#">Chicken, Meat & Fish</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <ul data-aos="fade-up">
+                        <li>
+                            <h6>Useful Links</h6>
+                        </li>
+                        <li><a href="./about-us.html">About Us</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">My Cart </a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <ul data-aos="fade-left">
+                        <li>
+                            <h6>Customer service</h6>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copy-right">COPYRIGHT © ALL RIGHTS RESERVED BY SAFEBAG</p>
+        </div>
+    </section>
+</body>
+
+</html>
+<script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+   $(document).ready(function(){
+     $(".open").click(function(){
+    $(".opened").slideToggle();
+  });
+});
+AOS.init();
+</script>
